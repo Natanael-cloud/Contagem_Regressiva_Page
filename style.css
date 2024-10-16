@@ -1,63 +1,126 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
-  color: #fff;
-}
-
-.container-botao {
-  margin-bottom: 20px;
-}
-
-button {
-  background-color: #ff5722;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #e64a19;
-}
-
-.container-contagem {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-.contagem {
-  text-align: center;
-}
-
-.tempo {
-  font-size: 48px;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.rotulo {
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  opacity: 0.8;
-}
+/* Remove as margens e os preenchimentos padrão de todos os elementos,
+   e define o modelo de box-sizing como border-box para facilitar o controle do layout */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para o corpo da página */
+  body {
+    /* Define a fonte para todo o corpo da página */
+    font-family: 'Arial', sans-serif;
+    
+    /* Utiliza Flexbox para centralizar o conteúdo horizontal e verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Define a altura da página para 100% da altura da janela */
+    height: 100vh;
+    
+    /* Alinha os elementos filhos em uma coluna */
+    flex-direction: column;
+    
+    /* Define um gradiente de fundo que vai do azul escuro ao azul claro */
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    
+    /* Define a cor do texto como branco */
+    color: #fff;
+  }
+  
+  /* Estilo para o container do botão */
+  .container-botao {
+    /* Define uma margem inferior de 20px para separar o botão do restante do conteúdo */
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para o botão */
+  button {
+    /* Define a cor de fundo do botão */
+    background-color: #ff5722;
+    
+    /* Define a cor do texto do botão */
+    color: white;
+    
+    /* Define o preenchimento interno do botão */
+    padding: 10px 20px;
+    
+    /* Remove bordas */
+    border: none;
+    
+    /* Deixa as bordas arredondadas */
+    border-radius: 5px;
+    
+    /* Define o tamanho da fonte do botão */
+    font-size: 18px;
+    
+    /* Altera o cursor para "pointer" ao passar o mouse sobre o botão */
+    cursor: pointer;
+    
+    /* Adiciona uma transição suave ao alterar a cor de fundo */
+    transition: background-color 0.3s;
+  }
+  
+  /* Estilo para o botão ao passar o mouse (hover) */
+  button:hover {
+    /* Altera a cor de fundo quando o botão é focado ou quando o mouse passa sobre ele */
+    background-color: #e64a19;
+  }
+  
+  /* Estilo para o container que contém a contagem regressiva */
+  .container-contagem {
+    /* Utiliza Flexbox para distribuir os elementos horizontalmente */
+    display: flex;
+    
+    /* Define um espaçamento entre os itens */
+    gap: 20px;
+    
+    /* Define preenchimento interno do container */
+    padding: 20px;
+    
+    /* Define um fundo semitransparente */
+    background: rgba(255, 255, 255, 0.1);
+    
+    /* Define bordas arredondadas */
+    border-radius: 10px;
+    
+    /* Adiciona uma sombra leve ao redor do container */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilo para os elementos individuais de contagem */
+  .contagem {
+    /* Centraliza o texto dentro de cada elemento de contagem */
+    text-align: center;
+  }
+  
+  /* Estilo para os números de tempo (dias, horas, minutos, segundos) */
+  .tempo {
+    /* Define o tamanho da fonte dos números de contagem */
+    font-size: 48px;
+    
+    /* Define uma margem inferior para separar os números dos rótulos */
+    margin-bottom: 5px;
+    
+    /* Define a espessura da fonte como negrito */
+    font-weight: bold;
+  }
+  
+  /* Estilo para os rótulos (Dias, Horas, Minutos, Segundos) */
+  .rotulo {
+    /* Define o tamanho da fonte dos rótulos */
+    font-size: 18px;
+    
+    /* Transforma o texto dos rótulos em letras maiúsculas */
+    text-transform: uppercase;
+    
+    /* Define um espaçamento entre as letras */
+    letter-spacing: 2px;
+    
+    /* Define a opacidade dos rótulos para deixá-los ligeiramente transparentes */
+    opacity: 0.8;
+  }
+  
 
 
