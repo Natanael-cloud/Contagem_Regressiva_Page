@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Contagem Regressiva</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem Regressiva</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container-contagem">
-    <div class="contagem">
-        <div class="tempo" id="dias"></div>
-        <div class="rotulo">Dias</div>
+    <div class="container-botao">
+        <button id="botao-iniciar" onclick="iniciarContagem()">Iniciar Contagem para o Ano Novo</button>
     </div>
-  </div>
-  <div class="contagem">
-      <div class="tempo" id="horas"></div>
-      <div class="rotulo">Horas</div>
-  </div>
-  <div class="contagem">
-      <div class="tempo" id="minutos"></div>
-      <div class="rotulo">Minutos</div>
-  </div>
-  <div class="contagem">
-      <div class="tempo" id="segundos"></div>
-      <div class="rotulo">Segundos</div>
-  </div>
-</div>
-<script src="index.js"></script>
-  
+
+    <div class="container-contagem" id="container-contagem" style="display: none;">
+        <div class="contagem">
+            <div class="tempo" id="dias"></div>
+            <div class="rotulo">Dias</div>
+        </div>
+        <div class="contagem">
+            <div class="tempo" id="horas"></div>
+            <div class="rotulo">Horas</div>
+        </div>
+        <div class="contagem">
+            <div class="tempo" id="minutos"></div>
+            <div class="rotulo">Minutos</div>
+        </div>
+        <div class="contagem">
+            <div class="tempo" id="segundos"></div>
+            <div class="rotulo">Segundos</div>
+        </div>
+    </div>
+
+    <div id="descricao-contagem" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Contagem regressiva para o Ano Novo!</h2>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
