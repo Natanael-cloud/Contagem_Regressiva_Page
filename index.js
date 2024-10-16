@@ -24,5 +24,12 @@ function atualizarContagem() {
     }
 }
 
-// Atualizar a contagem regressiva a cada segundo
-const intervaloContagem = setInterval(atualizarContagem, 1000);
+function iniciarContagem() {
+    // Mostrar a contagem regressiva e a descrição
+    document.getElementById('container-contagem').style.display = 'flex';
+    document.getElementById('descricao-contagem').style.display = 'block';
+
+    // Atualizar a contagem regressiva a cada segundo
+    const intervaloContagem = setInterval(atualizarContagem, 1000);
+}
+
