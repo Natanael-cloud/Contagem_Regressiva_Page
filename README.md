@@ -21,6 +21,7 @@
 
 https://github.com/user-attachments/assets/cff44bd1-2e15-4f69-93b8-4aa9845a56c9
 
+*Para testar a aplicação, clique no link: https://natanael-cloud.github.io/Contagem_Regressiva_Page/*
 
 
 <strong>A lógica e a estilização do código estão devidamente comentadas para melhor entendimento</strong>
